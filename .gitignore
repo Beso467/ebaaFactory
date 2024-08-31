@@ -1,5 +1,8 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+.sass-cache/
+.jekyll-cache/
+.bundle/
+config.yml
+_Drafts/
+_Site/
+*.swp
+*.swo
