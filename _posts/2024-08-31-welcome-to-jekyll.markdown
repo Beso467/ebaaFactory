@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Al Ebaa factory"
 date:   2024-08-31 10:47:23 +0300
 categories: jekyll update
 ---
