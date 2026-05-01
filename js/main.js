@@ -87,18 +87,21 @@
     // Modal Video
     $(document).ready(function () {
         var $videoSrc;
+
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
         });
-        console.log($videoSrc);
 
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
+        $('#videoModal').on('shown.bs.modal', function () {
+            $("#video source").attr('src', $videoSrc);
+            $("#video")[0].load();
+            $("#video")[0].play();
+        });
 
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
+        $('#videoModal').on('hide.bs.modal', function () {
+            $("#video")[0].pause();
+            $("#video")[0].currentTime = 0;
+        });
     });
 
 

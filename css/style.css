@@ -238,6 +238,14 @@
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) center center no-repeat;
     background-size: cover;
 }
+.pallet-page-header {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/pallet-img.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.gown-page-header {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/gown.jpeg) center center no-repeat;
+    background-size: cover;
+}
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);

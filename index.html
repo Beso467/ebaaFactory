@@ -84,7 +84,13 @@
                 <div class="navbar-nav me-auto">
                     <a href="/" class="nav-item nav-link active">Home</a>
                     <a href="/about" class="nav-item nav-link">About</a>
-                    <a href="/service" class="nav-item nav-link">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="/service" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu fade-up m-0">
+                            <a href="/pallets" class="dropdown-item">Pallets</a>
+                            <a href="/medical-products" class="dropdown-item">Medical Products</a>
+                        </div>
+                    </div>
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu fade-up m-0">
@@ -99,6 +105,10 @@
                 <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
                         <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-1 text-white">Phone Number</p>
+                        <h5 class="m-0 text-secondary">+962 775 560 163</h5>
                     </div>
                 </div>
             </div>
@@ -222,6 +232,36 @@
         </div>
     </div>
     <!-- Service End -->
+    <!-- Booking Start -->
+    <div class="container-fluid my-5 px-0">
+        <div class="video wow fadeInUp" data-wow-delay="0.1s">
+            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="vid/dates.mp4" data-bs-target="#videoModal">
+                <span></span>
+            </button>
+
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <video id="video" controls>
+                                    <source src="" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-white mb-4">Aleba Advanced Fabrics Manufacturing</h1>
+            <h3 class="text-white mb-0">Your partner toward successful farming</h3>
+        </div>
+    </div>
+    <!-- Booking End -->
 
 
     <!-- About Start -->

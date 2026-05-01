@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -75,7 +75,7 @@
     <div class="container-fluid nav-bar bg-light">
         <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
             <a href="/" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
-                <img src="/img/logo.jpeg" alt="">1111111
+                <img src="/img/logo.jpeg" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -84,7 +84,14 @@
                 <div class="navbar-nav me-auto">
                     <a href="/" class="nav-item nav-link">Home</a>
                     <a href="/about" class="nav-item nav-link">About</a>
-                    <a href="/service" class="nav-item nav-link active">Services</a>
+                    <a href="/service" class="nav-link dropdown-toggle active">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="/service" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu fade-up m-0">
+                            <a href="/pallets" class="dropdown-item">Pallets</a>
+                            <a href="/medical-products" class="dropdown-item">Medical Products</a>
+                        </div>
+                    </div>
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu fade-up m-0">
@@ -99,6 +106,10 @@
                 <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
                         <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-1 text-white">Phone Number</p>
+                        <h5 class="m-0 text-secondary">+962 775 560 163</h5>
                     </div>
                 </div>
             </div>
@@ -140,7 +151,7 @@
                     <div class="owl-carousel service-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
                         <div class="bg-light p-4">
                             <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-water fa-2x text-primary"></i>
+                                <i class="fa-solid fa-plate-wheat fa-2x text-primary"></i>
                             </div>
                             <h4 class="mb-3">Bags for high quality grapes and grenadine</h4>
                             <p>the new agriculture is based on the principle of high protection relying on elements that reduce the uses of chemicals and pesticides, as a resultdecreases the costs and saves health and environment. Moreover, it improves the production quality.</p>
@@ -150,7 +161,7 @@
                         </div>
                         <div class="bg-light p-4">
                             <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-water fa-2x text-primary"></i>
+                                <i class="fa-solid fa-wheat-awn fa-2x text-primary"></i>
                             </div>
                             <h4 class="mb-3">Agricultural protection fabrics</h4>
                             <p>It's designed to protect agricultural products especially the agricultural open tunnels and greenhouses, as well as protecting the plants from agricultural pest including the white fly. Taking in to consideration the needed ventilation and light with approximate holes of 300 per square centimeter.</p>
@@ -160,7 +171,7 @@
                         </div>
                         <div class="bg-light p-4">
                             <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-shower fa-2x text-primary"></i>
+                                <i class="fa-solid fa-wheat-awn fa-2x text-primary"></i>
                             </div>
                             <h4 class="mb-3">Agricultural Mesh Fabrics</h4>
                             <p>High-quality mesh designed to protect crops inside greenhouses and agricultural tunnels.</p>
@@ -176,7 +187,7 @@
                         </div>
                         <div class="bg-light p-4">
                             <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-shower fa-2x text-primary"></i>
+                                <i class="fa-solid fa-apple-whole fa-2x text-primary"></i>
                             </div>
                             <h4 class="mb-3">Fruit Protection Bags</h4>
                             <p>A practical solution to reduce pesticide use and ensure healthier produce.</p>
@@ -186,7 +197,7 @@
                         </div>
                         <div class="bg-light p-4">
                             <div class="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style="width: 75px; height: 75px;">
-                                <i class="fa fa-shower fa-2x text-primary"></i>
+                                <i class="fa-solid fa-cow fa-2x text-primary"></i>
                             </div>
                             <h4 class="mb-3">Meat Packaging Bags</h4>
                             <p>Modern packaging solutions with high flexibility and durability.</p>

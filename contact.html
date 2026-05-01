@@ -82,7 +82,13 @@
                 <div class="navbar-nav me-auto">
                     <a href="/index" class="nav-item nav-link">Home</a>
                     <a href="/about" class="nav-item nav-link">About</a>
-                    <a href="/service" class="nav-item nav-link">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="/service" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu fade-up m-0">
+                            <a href="/pallets" class="dropdown-item">Pallets</a>
+                            <a href="/medical-products" class="dropdown-item">Medical Products</a>
+                        </div>
+                    </div>
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu fade-up m-0">
@@ -140,29 +146,29 @@
                 </div>
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-light p-5 h-100 d-flex align-items-center">
-                        <form>
+                        <form action="https://formspree.io/f/aleba1t.i.a@gmail.com" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email"  name="email" class="form-control" id="email" placeholder="Your Email">
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                        <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
@@ -188,9 +194,11 @@
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Amman, Jordan</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>
                      +962775560163
-                     <br>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>
                      +962799845678 
-                     <br>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>
                      +962795806243
                     </p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>aleba1t.i.a@gmail.com</p>
