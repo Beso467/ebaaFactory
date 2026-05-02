@@ -61,6 +61,7 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/share/1EAfa6qyCo/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="t.me/Aleba2026"><i class="fab fa-telegram"></i></a>
                     <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.instagram.com/aleba2026?utm_source=qr&igsh=ZGdsb2EyZXczbzdp"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -83,7 +84,7 @@
                     <a href="/index" class="nav-item nav-link">Home</a>
                     <a href="/about" class="nav-item nav-link">About</a>
                     <div class="nav-item dropdown">
-                        <a href="/service" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                        <a href="/service" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu fade-up m-0">
                             <a href="/pallets" class="dropdown-item">Pallets</a>
                             <a href="/medical-products" class="dropdown-item">Medical Products</a>
@@ -146,7 +147,7 @@
                 </div>
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-light p-5 h-100 d-flex align-items-center">
-                        <form action="https://formspree.io/f/aleba1t.i.a@gmail.com" method="POST">
+                        <form id="contact-form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -204,7 +205,7 @@
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>aleba1t.i.a@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/1EAfa6qyCo/"><i class="fab fa-facebook-f"></i></a>
-                        <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
+                        <a class="btn btn-outline-light btn-social" href="t.me/Aleba2026"><i class="fab fa-telegram"></i></a>
                         <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/aleba2026?utm_source=qr&igsh=ZGdsb2EyZXczbzdp"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
@@ -265,9 +266,25 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        (function(){
+            emailjs.init("lijFj0Vz-FRTkhqJm"); // from EmailJS dashboard
+        })();
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_ha7uglr", "template_7dgchih", this)
+            .then(function() {
+            alert("Message sent!");
+            }, function(error) {
+            alert("Failed: " + JSON.stringify(error));
+            });
+        });
+    </script>
 </body>
 
 </html>
